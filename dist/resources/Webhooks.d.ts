@@ -2,7 +2,6 @@ import type { SubscribeToWebhookOptions, SubscriptToWebhookResponse, ListWebhook
 import type ShipStation from '../shipstation';
 import { BaseResource } from './Base';
 export declare class Webhooks extends BaseResource {
-    protected shipstation: ShipStation;
     constructor(shipstation: ShipStation);
     /**
      * [Official Documentation](https://www.shipstation.com/docs/api/webhooks/list/)

@@ -2,7 +2,6 @@ import type ShipStation from '../shipstation';
 import { BaseResource } from './Base';
 import type { CreateWarehouseOptions, DeleteWarehouseResponse, ListWarehousesResponse, UpdateWarehouseOptions, WarehouseResponseItem } from '../types';
 export declare class Warehouses extends BaseResource {
-    protected shipstation: ShipStation;
     constructor(shipstation: ShipStation);
     /**
      * [Official Documentation](https://www.shipstation.com/docs/api/warehouses/get/)

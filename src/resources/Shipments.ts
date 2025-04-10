@@ -11,7 +11,7 @@ import type ShipStation from '../shipstation';
 import { BaseResource } from './Base';
 
 export class Shipments extends BaseResource {
-  constructor(protected override shipstation: ShipStation) {
+  constructor(shipstation: ShipStation) {
     super(shipstation, 'shipments');
   }
 
@@ -70,7 +70,7 @@ export class Shipments extends BaseResource {
    *
    * If you deactivated the Manual Store your ShipStation account initially came with, you must activate one. Otherwise,
    * if you try to create labels with this endpoint, you will see a 500 error that reads,
-   * “Object reference not set to an instance of an object.”
+   * "Object reference not set to an instance of an object."
    *
    * @param data The data for the request.
    *

@@ -2,7 +2,6 @@ import type { ListFulfillmentsOptions, ListFulfillmentsResponse } from '../types
 import type ShipStation from '../shipstation';
 import { BaseResource } from './Base';
 export declare class Fulfillments extends BaseResource {
-    protected shipstation: ShipStation;
     constructor(shipstation: ShipStation);
     /**
      * [Official Documentation](https://www.shipstation.com/docs/api/fulfillments/list-fulfillments/)

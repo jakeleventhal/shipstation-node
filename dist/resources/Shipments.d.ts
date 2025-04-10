@@ -2,7 +2,6 @@ import type { CreateShipmentLabelOptions, GetRatesOptions, GetRatesResponse, Lis
 import type ShipStation from '../shipstation';
 import { BaseResource } from './Base';
 export declare class Shipments extends BaseResource {
-    protected shipstation: ShipStation;
     constructor(shipstation: ShipStation);
     /**
      * [Official Documentation](https://www.shipstation.com/docs/api/shipments/list/)
@@ -45,7 +44,7 @@ export declare class Shipments extends BaseResource {
      *
      * If you deactivated the Manual Store your ShipStation account initially came with, you must activate one. Otherwise,
      * if you try to create labels with this endpoint, you will see a 500 error that reads,
-     * “Object reference not set to an instance of an object.”
+     * "Object reference not set to an instance of an object."
      *
      * @param data The data for the request.
      *

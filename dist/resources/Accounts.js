@@ -11,7 +11,6 @@ import { BaseResource } from './Base';
 export class Accounts extends BaseResource {
     constructor(shipstation) {
         super(shipstation, 'accounts');
-        this.shipstation = shipstation;
     }
     /**
      * [Official Documentation](https://www.shipstation.com/docs/api/accounts/create/)

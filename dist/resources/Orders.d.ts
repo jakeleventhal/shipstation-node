@@ -3,7 +3,6 @@ import type ShipStation from '../shipstation';
 import { BaseResource } from './Base';
 import type { CreateLabelResponse, CreateOrUpdateMultipleOrdersResponse, CreateOrUpdateOrderOptions, ListOrdersOptions, ListOrdersResponse, OrderResponseItem } from '../types';
 export declare class Orders extends BaseResource {
-    protected shipstation: ShipStation;
     constructor(shipstation: ShipStation);
     /**
      * [Official Documentation](https://www.shipstation.com/docs/api/orders/get-order/)
@@ -110,7 +109,7 @@ export declare class Orders extends BaseResource {
      * - Find that `orderId` in your Response from the
      * [Create/Update Order call](https://www.shipstation.com/docs/api/orders/create-update-order/) if you are creating
      * the orders via OpenAPI.
-     * - If you’re importing orders from a marketplace, you can list orders and find the `orderId` using one of the
+     * - If you're importing orders from a marketplace, you can list orders and find the `orderId` using one of the
      * endpoints in a [List Orders By Tag call](https://www.shipstation.com/docs/api/orders/list-by-tag/).
      * - You'll need a `tagId` to make this API call.
      * - To find a list of tags for this account (`tagId`), call
@@ -132,7 +131,7 @@ export declare class Orders extends BaseResource {
      * - Find that `orderId` in your Response from the
      * [Create/Update Order call](https://www.shipstation.com/docs/api/orders/create-update-order/) if you are creating
      * the orders via OpenAPI.
-     * - If you’re importing orders from a marketplace, you can list orders and find the `orderId` using one of the
+     * - If you're importing orders from a marketplace, you can list orders and find the `orderId` using one of the
      * endpoints in a [List Orders By Tag call](https://www.shipstation.com/docs/api/orders/list-by-tag/).
      * - You'll need a `tagId` to make this API call.
      * - To find a list of tags for this account (`tagId`), call

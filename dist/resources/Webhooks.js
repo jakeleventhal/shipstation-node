@@ -11,7 +11,6 @@ import { BaseResource } from './Base';
 export class Webhooks extends BaseResource {
     constructor(shipstation) {
         super(shipstation, 'webhooks');
-        this.shipstation = shipstation;
     }
     /**
      * [Official Documentation](https://www.shipstation.com/docs/api/webhooks/list/)

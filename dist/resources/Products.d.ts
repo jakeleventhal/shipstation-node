@@ -2,7 +2,6 @@ import type ShipStation from '../shipstation';
 import type { GetProductResponse, ListProductsOptions, ListProductsResponse, Product, UpdateProductResponse } from '../types';
 import { BaseResource } from './Base';
 export declare class Products extends BaseResource {
-    protected shipstation: ShipStation;
     constructor(shipstation: ShipStation);
     /**
      * [Official Documentation](https://www.shipstation.com/docs/api/products/get-product/)

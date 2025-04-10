@@ -2,7 +2,6 @@ import type ShipStation from '../shipstation';
 import type { ListAccountTagsResponse, RegisterAccountOptions, RegisterAccountResponse } from '../types';
 import { BaseResource } from './Base';
 export declare class Accounts extends BaseResource {
-    protected shipstation: ShipStation;
     constructor(shipstation: ShipStation);
     /**
      * [Official Documentation](https://www.shipstation.com/docs/api/accounts/create/)

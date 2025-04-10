@@ -2,7 +2,6 @@ import type ShipStation from '../shipstation';
 import type { ListStoresOptions, ListStoresResponse, DeactivateStoreResponse, StoreResponseItem, GetRefreshRateResponse, ReactivateStoreResponse, RefreshStoreOptions, RefreshStoreResponse, ListMarketplacesResponse } from '../types';
 import { BaseResource } from './Base';
 export declare class Stores extends BaseResource {
-    protected shipstation: ShipStation;
     constructor(shipstation: ShipStation);
     /**
      * [Official Documentation](https://www.shipstation.com/docs/api/stores/get-store/)

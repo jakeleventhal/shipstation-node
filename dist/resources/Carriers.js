@@ -11,7 +11,6 @@ import { BaseResource } from './Base';
 export class Carriers extends BaseResource {
     constructor(shipstation) {
         super(shipstation, 'carriers');
-        this.shipstation = shipstation;
     }
     /**
      * [Official Documentation](https://www.shipstation.com/docs/api/carriers/get/)

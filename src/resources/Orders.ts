@@ -18,7 +18,7 @@ import type {
 } from '../types';
 
 export class Orders extends BaseResource {
-  constructor(protected override shipstation: ShipStation) {
+  constructor(shipstation: ShipStation) {
     super(shipstation, 'orders');
   }
 
@@ -170,7 +170,7 @@ export class Orders extends BaseResource {
    * - Find that `orderId` in your Response from the
    * [Create/Update Order call](https://www.shipstation.com/docs/api/orders/create-update-order/) if you are creating
    * the orders via OpenAPI.
-   * - If you’re importing orders from a marketplace, you can list orders and find the `orderId` using one of the
+   * - If you're importing orders from a marketplace, you can list orders and find the `orderId` using one of the
    * endpoints in a [List Orders By Tag call](https://www.shipstation.com/docs/api/orders/list-by-tag/).
    * - You'll need a `tagId` to make this API call.
    * - To find a list of tags for this account (`tagId`), call
@@ -199,7 +199,7 @@ export class Orders extends BaseResource {
    * - Find that `orderId` in your Response from the
    * [Create/Update Order call](https://www.shipstation.com/docs/api/orders/create-update-order/) if you are creating
    * the orders via OpenAPI.
-   * - If you’re importing orders from a marketplace, you can list orders and find the `orderId` using one of the
+   * - If you're importing orders from a marketplace, you can list orders and find the `orderId` using one of the
    * endpoints in a [List Orders By Tag call](https://www.shipstation.com/docs/api/orders/list-by-tag/).
    * - You'll need a `tagId` to make this API call.
    * - To find a list of tags for this account (`tagId`), call

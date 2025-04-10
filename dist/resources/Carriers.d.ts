@@ -2,7 +2,6 @@ import type ShipStation from '../shipstation';
 import type { AddFundsResponse, CarrierResponseItem, ListCarriersResponse, ListPackagesResponse, ListServicesResponse } from '../types';
 import { BaseResource } from './Base';
 export declare class Carriers extends BaseResource {
-    protected shipstation: ShipStation;
     constructor(shipstation: ShipStation);
     /**
      * [Official Documentation](https://www.shipstation.com/docs/api/carriers/get/)

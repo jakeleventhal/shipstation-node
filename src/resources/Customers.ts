@@ -3,7 +3,7 @@ import type { ListCustomersOptions, ListCustomersResponse, CustomerResponseItem 
 import { BaseResource } from './Base';
 
 export class Customers extends BaseResource {
-  constructor(protected override shipstation: ShipStation) {
+  constructor(shipstation: ShipStation) {
     super(shipstation, 'customers');
   }
 

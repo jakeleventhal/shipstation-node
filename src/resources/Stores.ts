@@ -13,7 +13,7 @@ import type {
 import { BaseResource } from './Base';
 
 export class Stores extends BaseResource {
-  constructor(protected override shipstation: ShipStation) {
+  constructor(shipstation: ShipStation) {
     super(shipstation, 'stores');
   }
 

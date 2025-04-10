@@ -2,7 +2,6 @@ import type ShipStation from '../shipstation';
 import type { ListCustomersOptions, ListCustomersResponse, CustomerResponseItem } from '../types';
 import { BaseResource } from './Base';
 export declare class Customers extends BaseResource {
-    protected shipstation: ShipStation;
     constructor(shipstation: ShipStation);
     /**
      * [Official Documentation](https://www.shipstation.com/docs/api/customers/get-customer/)

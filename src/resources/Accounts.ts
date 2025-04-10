@@ -3,7 +3,7 @@ import type { ListAccountTagsResponse, RegisterAccountOptions, RegisterAccountRe
 import { BaseResource } from './Base';
 
 export class Accounts extends BaseResource {
-  constructor(protected override shipstation: ShipStation) {
+  constructor(shipstation: ShipStation) {
     super(shipstation, 'accounts');
   }
 

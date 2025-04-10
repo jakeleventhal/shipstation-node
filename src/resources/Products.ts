@@ -9,7 +9,7 @@ import type {
 import { BaseResource } from './Base';
 
 export class Products extends BaseResource {
-  constructor(protected override shipstation: ShipStation) {
+  constructor(shipstation: ShipStation) {
     super(shipstation, 'products');
   }
 
